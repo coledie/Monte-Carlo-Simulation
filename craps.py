@@ -97,11 +97,11 @@ def craps_masked(n_games):
 
 def craps_optimized(n_games):
     """
-    An optimization of craps_masked, that implementation requires
-    a lot of recomputation - dice are rolled for games that are
-    already complete. To fix this, np.delete is used to remove
-    completed games in the game arrays instead of masking them.
-    
+    An optimization of craps_masked, that implementation has a
+    whole lot of recomputation - dice are rolled for games that 
+    are already complete. To fix this, np.delete is used to remove
+    completed games from the game arrays instead of masking them.
+
     Parameters
     ----------
     n_games: int
